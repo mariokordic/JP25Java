@@ -19,7 +19,14 @@ public static void main(String[] args) {
                break;
            }
            krajreda--;
-           
+           for(int i=krajreda;i>=red;i--) {
+               tablica[i][stupac]=brojac;
+               brojac++; 
+           }
+           if(brojac>x*y) {        
+               break;
+           }
+           stupac++;
        }
        for(int i=0;i<x;i++) {
            for(int j=0;j<y;j++) {
