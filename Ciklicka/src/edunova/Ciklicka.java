@@ -35,6 +35,14 @@ public static void main(String[] args) {
                break;
        }
            red++;
+           for(int i=red;i<=krajreda;i++) {
+               tablica[i][krajstupca]=brojac;
+               brojac++;       
+           }
+           if(brojac>x*y) {        
+               break;
+           }
+           krajstupca--;
            
        }
        for(int i=0;i<x;i++) {
