@@ -3,8 +3,8 @@ package edunova;
 import javax.swing.JOptionPane;
 
 public class E06_Program {
-//Program učitava broj i ispisuje sve parne brojeve od 1 do tog broja
 	
+	// Program učitava broj i ispisuje sve parne brojeve od 1 do tog broja
 	public static void main(String[] args) {
 		ispisiBrojeve(parniBrojevi(ucitajBroj()));
 	}
@@ -18,7 +18,8 @@ public class E06_Program {
 			}
 		}
 	}
-	private static int[] parniBrojevi(int broj) {
+	
+	private static int[] parniBrojevi(int broj){
 		int[] niz = new int[broj/2];
 		int brojac=0;
 		for(int i=1;i<broj;i++) {
@@ -28,7 +29,8 @@ public class E06_Program {
 		}
 		return niz;
 	}
-	private static void ispisiBrojeve(int[]niz) {
+	
+	private static void ispisiBrojeve(int[] niz) {
 		for(int i:niz) {
 			if(i==0) {
 				continue;
@@ -36,5 +38,5 @@ public class E06_Program {
 			System.out.println(i);
 		}
 	}
-	
+
 }
