@@ -60,5 +60,7 @@ public class Unos {
 			return s;
 		}
 	}
+	
+	public static boolean unesi
 
 }
