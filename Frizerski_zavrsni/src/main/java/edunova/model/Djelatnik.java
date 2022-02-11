@@ -4,11 +4,16 @@
  */
 package edunova.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  *
  * @author mkordic
  */
+@Entity(name = "djelatnik")
 public class Djelatnik {
+        @Id
         private int sifra;
         private String ime;
 	private String prezime;
