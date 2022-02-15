@@ -13,6 +13,17 @@ import javax.persistence.Id;
  */
 @Entity(name = "djelatnik")
 public class Djelatnik extends Entitet{
+    public Djelatnik(){
+        
+    }
+    public Djelatnik(String ime, String prezime, String adresa, String grad, String drzava, int postanskiBroj) {
+        this.ime = ime;
+        this.prezime = prezime;
+        this.adresa = adresa;
+        this.grad = grad;
+        this.drzava = drzava;
+        this.postanskiBroj = postanskiBroj;
+    }
         private String ime;
 	private String prezime;
 	private String adresa;
