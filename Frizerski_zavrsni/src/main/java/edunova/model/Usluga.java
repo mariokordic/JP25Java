@@ -13,20 +13,12 @@ import javax.persistence.Id;
  * @author mkordic
  */
 @Entity(name="usluga")
-public class Usluga {
-    @Id
-    private int sifra;
+public class Usluga extends Entitet{
+
     private String naziv;
     private int trajanje;
     private BigDecimal cijena;
 
-    public int getSifra() {
-        return sifra;
-    }
-
-    public void setSifra(int sifra) {
-        this.sifra = sifra;
-    }
 
     public String getNaziv() {
         return naziv;

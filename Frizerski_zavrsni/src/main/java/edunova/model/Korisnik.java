@@ -11,10 +11,9 @@ import javax.persistence.Id;
  *
  * @author mkordic
  */
-@Entity(name="korsnik")
-public class Korisnik {
-        @Id
-        private int sifra;
+@Entity(name="korisnik")
+public class Korisnik  extends Entitet{
+
         private String ime;
 	private String prezime;
 	private String brojMobitela;
@@ -24,14 +23,7 @@ public class Korisnik {
 	private int postanskiBroj;
 	private char spol; 
 
-        public int getSifra() {
-            return sifra;
-        }
-
-        public void setSifra(int sifra) {
-            this.sifra = sifra;
-        }
-
+ 
         public String getIme() {
             return ime;
         }

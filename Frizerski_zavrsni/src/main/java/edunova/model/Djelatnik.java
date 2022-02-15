@@ -12,9 +12,7 @@ import javax.persistence.Id;
  * @author mkordic
  */
 @Entity(name = "djelatnik")
-public class Djelatnik {
-        @Id
-        private int sifra;
+public class Djelatnik extends Entitet{
         private String ime;
 	private String prezime;
 	private String adresa;
@@ -22,13 +20,7 @@ public class Djelatnik {
 	private String drzava;
 	private int postanskiBroj; 
 
-    public int getSifra() {
-        return sifra;
-    }
-
-    public void setSifra(int sifra) {
-        this.sifra = sifra;
-    }
+  
 
     public String getIme() {
         return ime;

@@ -25,7 +25,19 @@
         <property name="hibernate.dbcp.maxIdle">10</property>
         <property name="hibernate.dbcp.minIdle">5</property>
         <property name="hibernate.dbcp.maxWaitMillis">-1</property>
-        <mapping class="edunova.model.vjezbanje.Mobitel" />
-        <mapping class="edunova.model.vjezbanje.Olovka"/>
+           
+        <!-- Ovdje ćemo navoditi mapirane klase -->
+        <mapping class="edunova.model.vjezbanje.osnovno.Mobitel" />
+        <mapping class="edunova.model.vjezbanje.osnovno.Olovka" />
+        
+        <!-- Ne treba navoditi nadklase -->
+        <mapping class="edunova.model.vjezbanje.nasljedivanje.Primka" />
+        <mapping class="edunova.model.vjezbanje.nasljedivanje.Otpremnica" />
+        
+        <!-- veze -->
+        <mapping class="edunova.model.vjezbanje.veze.Opcina" />
+        <mapping class="edunova.model.vjezbanje.veze.Mjesto" />
+        <mapping class="edunova.model.vjezbanje.veze.Oznaka" />
+        <mapping class="edunova.model.vjezbanje.veze.Slika" />
     </session-factory>
 </hibernate-configuration>
