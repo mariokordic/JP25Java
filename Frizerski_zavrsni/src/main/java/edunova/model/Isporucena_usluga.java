@@ -12,7 +12,7 @@ import javax.persistence.ManyToOne;
  *
  * @author mkordic
  */
-@Entity
+@Entity(name = "isporucena_usluga")
 public class Isporucena_usluga extends Entitet {
     @ManyToOne
     private Usluga usluga;

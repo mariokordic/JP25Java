@@ -12,7 +12,7 @@ import javax.persistence.ManyToOne;
  *
  * @author mkordic
  */
-@Entity
+@Entity(name="termin")
 public class Termin extends Entitet{
     @ManyToOne
     private Djelatnik djelatnik;
