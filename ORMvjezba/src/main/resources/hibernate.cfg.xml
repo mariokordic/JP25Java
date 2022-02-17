@@ -27,17 +27,27 @@
         <property name="hibernate.dbcp.maxWaitMillis">-1</property>
            
         <!-- Ovdje ćemo navoditi mapirane klase -->
+        <!--
         <mapping class="edunova.model.vjezbanje.osnovno.Mobitel" />
         <mapping class="edunova.model.vjezbanje.osnovno.Olovka" />
-        
+        -->
         <!-- Ne treba navoditi nadklase -->
+        <!--     
         <mapping class="edunova.model.vjezbanje.nasljedivanje.Primka" />
         <mapping class="edunova.model.vjezbanje.nasljedivanje.Otpremnica" />
-        
+        -->
         <!-- veze -->
+        <!--
         <mapping class="edunova.model.vjezbanje.veze.Opcina" />
         <mapping class="edunova.model.vjezbanje.veze.Mjesto" />
         <mapping class="edunova.model.vjezbanje.veze.Oznaka" />
         <mapping class="edunova.model.vjezbanje.veze.Slika" />
-    </session-factory>
+        -->
+        
+            
+        <mapping class="edunova.model.Polaznik" />
+        <mapping class="edunova.model.Predavac" />
+        <mapping class="edunova.model.Smjer" />
+        <mapping class="edunova.model.Grupa" />
+        </session-factory>
 </hibernate-configuration>
