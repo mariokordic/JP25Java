@@ -42,7 +42,7 @@ public class PocetniInsert {
                     faker.name().lastName().toLowerCase().replace(" ", "") + 
                     "@edunova.hr");
             p.setOib(ucitajOib());
-            p.setBrojUgovora(distanceMeasurement());
+            p.setBrojUgovora(brojUgovora());
             session.save(p);
         }
         Smjer s = new Smjer();
@@ -79,7 +79,7 @@ public class PocetniInsert {
         }
       return oib;
     }
-  public static String distanceMeasurement() {
+  public static String brojUgovora() {
       Faker faker1 = new Faker();  
       return faker1.number().numberBetween(100, 10000) + ' ' + faker1.resolve("space.distance_measurement");
 }
