@@ -54,7 +54,8 @@ public class Test {
         for (int i = 0; i < 200; i++) {
             System.out.println(hr.name().fullName());
         }
-
+    }
+        public void ucitajOib(){
         try {
             URL yahoo = new URL("http://oib.itcentrala.com/oib-generator/");
             BufferedReader in = new BufferedReader(
@@ -76,7 +77,7 @@ public class Test {
             in.close();
         } catch (Exception e) {
         }
-
+      
     }
 
 }
